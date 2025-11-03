@@ -1,22 +1,23 @@
 /* * ========================================
- * This is the CSS for your professional,
- * single-column executive portfolio.
+ * 这是你的专业单栏作品集 CSS
+ * 已更新为你喜欢的 'Helvetica Neue' 字体
  * ========================================
  */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* 字体已按你的要求改回! */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #333;
-  background-color: #f8f9fa; /* Softer background gray */
+  background-color: #f8f9fa; /* 更柔和的背景灰 */
   margin: 0;
   padding: 0;
 }
 
 #container {
-  max-width: 960px; /* Optimal reading width */
-  margin: 40px auto; /* Spacing from top/bottom */
+  max-width: 960px; /* 最佳阅读宽度 */
+  margin: 40px auto; /* 顶部和底部的间距 */
   padding: 20px;
   background-color: #ffffff;
   border-radius: 8px;
@@ -24,10 +25,10 @@ body {
 }
 
 /* =================================== */
-/* Section 1: About Me */
+/* 板块 1: 关于我 (About Me) */
 /* =================================== */
 #about {
-  text-align: center; /* Center-align the intro */
+  text-align: center; /* 居中显示头像、标题和链接 */
   padding-bottom: 30px;
   border-bottom: 2px solid #eee;
 }
@@ -35,7 +36,7 @@ body {
 .profile-pic {
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Circular photo */
+  border-radius: 50%; /* 圆形头像 */
   border: 5px solid #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   margin-bottom: 15px;
@@ -51,11 +52,11 @@ h1 {
 .intro {
   font-size: 18px;
   color: #555;
-  max-width: 760px; /* Intro text width */
+  max-width: 760px; /* 简介不要太宽 */
   margin: 20px auto;
 }
 
-/* NEW: Skills Bar Style */
+/* 技能栏样式 */
 .skills-bar {
   font-size: 16px;
   color: #333;
@@ -63,9 +64,9 @@ h1 {
   margin: 30px auto 20px auto;
   max-width: 760px;
 }
-.skills-bar code { /* Style each skill */
+.skills-bar code { /* 每个技能的样式 */
   font-family: 'Menlo', 'Consolas', monospace;
-  background-color: #f0f0f8; /* Light purple/blue tint */
+  background-color: #f0f0f8; /* 淡色背景 */
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 15px;
@@ -89,7 +90,7 @@ h1 {
 
 
 /* =================================== */
-/* Section 2: Work Experience */
+/* 通用板块样式 (Experience, Projects) */
 /* =================================== */
 section {
   padding-top: 30px;
@@ -105,6 +106,9 @@ h2 {
   margin-bottom: 30px;
 }
 
+/* =================================== */
+/* 板块 2: 工作经验 (Work Experience) */
+/* =================================== */
 .job {
   margin-bottom: 25px;
 }
@@ -133,27 +137,26 @@ h2 {
 }
 
 /* =================================== */
-/* Section 3: Featured Projects */
+/* 板块 3: 精选项目 (Featured Projects) */
 /* =================================== */
 
-/* NEW: Project Category Title Style */
+/* 项目分类的标题 (Quant, DS, etc.) */
 #projects h3 {
   font-size: 24px;
   font-weight: 600;
   color: #333;
   border-bottom: 1px solid #ccc;
   padding-bottom: 8px;
-  margin-top: 40px; /* Space *above* each category title */
+  margin-top: 40px; /* 每个分类标题上的间距 */
   margin-bottom: 25px;
 }
 
-/* UPDATED: Project Grid (2-column, responsive) */
+/* 项目卡片网格布局 */
 .project-grid {
   display: grid;
-  /* This creates a 2-column grid on desktops/tablets, 
-     and stacks to 1-column on phones. Perfect for your 3x2 layout. */
+  /* 响应式网格：在电脑上自动适配2-3栏，在手机上变为1栏 */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px; /* Spacing between cards */
+  gap: 25px; /* 卡片之间的间距 */
 }
 
 .project {
@@ -166,7 +169,7 @@ h2 {
 }
 
 .project:hover {
-  transform: translateY(-5px); /* Hover effect */
+  transform: translateY(-5px); /* 悬停上浮效果 */
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
@@ -174,7 +177,7 @@ h2 {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 10px;
-  color: #0056b3; /* Link blue */
+  color: #0056b3; /* 链接蓝色 */
 }
 
 .project p {
@@ -192,7 +195,7 @@ h2 {
 }
 
 /* =================================== */
-/* Responsive Design (Phones) */
+/* 响应式设计 (手机端) */
 /* =================================== */
 @media (max-width: 768px) {
   #container {
@@ -212,5 +215,5 @@ h2 {
     font-size: 28px;
   }
   
-  /* .project-grid will automatically stack to 1 column */
+  /* .project-grid 会自动在手机上堆叠为1栏 */
 }

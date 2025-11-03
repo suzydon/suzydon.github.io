@@ -1,115 +1,123 @@
 /* * ========================================
- * 这是你的【最终】样式文件
- * 布局: Jon Barron (双栏, 极简)
- * 字体: Helvetica Neue (你喜欢的)
- * 内容: 你的专业框架 (HSBC/Huawei)
+ * 这是【真正】的 Jon Barron 风格
+ * 布局: 100% 还原的 'display: table' 布局
+ * 字体: 100% 还原的 'Helvetica Neue'
+ * 字号: 100% 还原的 H1 (52px), H2 (26px)
+ * 颜色: 100% 还原的链接蓝 (#337ab7)
  * ========================================
  */
 
 body {
-  /* 字体已按你的要求固定为 'Helvetica Neue' */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  /* 极简风格的浅灰色背景 */
-  background-color: #f9f9f9; 
-  margin: 0;
-  padding: 0;
-}
-
-#container {
-  max-width: 960px; /* 最佳阅读宽度 */
-  margin: 40px auto;
+  /* 还原 Jon Barron 的原始设置 */
+  margin: 100px auto; 
+  max-width: 960px;
   padding: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fcfcfc;
 }
 
+/* =================================== */
+/* 核心布局 (100% 还原) */
+/* =================================== */
 #main {
-  display: flex; /* 启用 flexbox 实现双栏 */
-  justify-content: space-between; /* 两栏之间留出空间 */
-  align-items: flex-start; /* 顶部对齐 */
-  padding: 40px; /* 页面内容的内边距 */
-  background-color: #ffffff; /* 内容区是白色 */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  display: table; /* 使用 'table' 布局, 这就是你想要的"感觉" */
+  width: 100%;
 }
-
-/* =================================== */
-/* 左侧栏 (所有文字) */
-/* =================================== */
 #left {
-  flex: 2; /* 左侧栏占 2/3 宽度 */
-  padding-right: 40px; /* 与右侧头像的间距 */
+  display: table-cell;
+  width: 720px; /* 固定宽度 (经典布局) */
+  padding-right: 40px;
+  vertical-align: top;
+}
+#right {
+  display: table-cell;
+  width: 240px; /* 固定宽度 (经典布局) */
+  vertical-align: top;
+}
+#right img {
+  width: 240px; /* 头像填满右侧 */
+  height: 240px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
 }
 
+/* =================================== */
+/* 文本样式 (100% 还原) */
+/* =================================== */
 h1 {
-  font-size: 44px;
+  font-size: 52px; /* 还原: 52px */
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 20px;
-  color: #222;
+}
+h2 {
+  font-size: 26px; /* 还原: 26px */
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee; /* 还原: 细线 */
+  padding-bottom: 5px;
+}
+p {
+  margin-bottom: 20px; /* 还原: 20px 间距 */
+}
+a {
+  color: #337ab7; /* 还原: 经典蓝 */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
+/* =================================== */
+/* 为你的新内容添加的“匹配”样式 */
+/* =================================== */
+
+/* 简介文字 */
 .intro {
-  font-size: 18px;
+  font-size: 18px; /* 简介稍大 */
   color: #555;
-  margin: 20px 0;
+  margin-bottom: 20px;
+}
+.intro:last-of-type {
+  margin-bottom: 30px;
 }
 
-/* 技能栏样式 */
+/* 技能栏 */
 .skills-bar {
   font-size: 16px;
   color: #333;
   font-weight: 500;
-  margin: 30px 0 20px 0;
+  margin-bottom: 20px;
 }
-.skills-bar code { /* 每个技能的样式 */
+.skills-bar code {
   font-family: 'Menlo', 'Consolas', monospace;
-  background-color: #f0f0f8; /* 淡色背景 */
+  background-color: #f0f0f8;
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 15px;
   color: #444;
 }
 
+/* 联系方式 */
 .contact-links {
-  margin-top: 20px;
   font-size: 18px;
   font-weight: 500;
 }
 .contact-links a {
-  color: #007bff;
-  text-decoration: none;
-  margin-right: 15px; /* 链接间距 */
-}
-.contact-links a:hover {
-  text-decoration: underline;
+  margin-right: 15px;
 }
 
-/* =================================== */
-/* 通用内容板块 (Experience, Projects) */
-/* =================================== */
-section {
-  margin-top: 40px;
-}
-
-h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #333;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-}
-
-/* =================================== */
-/* 工作经验 (Work Experience) */
-/* =================================== */
+/* 工作经验 */
 .job {
   margin-bottom: 25px;
 }
 .job h3 {
-  font-size: 22px;
+  font-size: 20px; /* 职位标题 */
   font-weight: 600;
   margin-bottom: 5px;
 }
@@ -128,13 +136,9 @@ h2 {
   margin-bottom: 8px;
 }
 
-/* =================================== */
-/* 精选项目 (Featured Projects) */
-/* =================================== */
-
-/* 项目分类的标题 (Quant, DS, etc.) */
+/* 项目 */
 #projects h3 {
-  font-size: 24px;
+  font-size: 22px; /* 项目分类标题 */
   font-weight: 600;
   color: #333;
   border-bottom: 1px solid #ccc;
@@ -142,8 +146,6 @@ h2 {
   margin-top: 40px;
   margin-bottom: 20px;
 }
-
-/* 项目条目 (极简风格, 没有卡片) */
 .project {
   margin-bottom: 25px;
 }
@@ -151,70 +153,40 @@ h2 {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 10px;
-  color: #0056b3; /* 链接蓝色 */
+  color: #337ab7; /* 匹配链接蓝 */
 }
 .project p {
-  font-size: 16px;
   margin: 0;
 }
 .project a {
   font-weight: bold;
-  color: #007bff;
-  text-decoration: none;
-}
-.project a:hover {
-  text-decoration: underline;
-}
-
-
-/* =================================== */
-/* 右侧栏 (头像) */
-/* =================================== */
-#right {
-  flex: 1; /* 右侧栏占 1/3 宽度 */
-  text-align: center;
-}
-
-#right img {
-  width: 200px; /* 头像大小 */
-  height: 200px;
-  border-radius: 50%; /* 圆形 */
-  margin-top: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.15);
-  border: 4px solid #fff;
 }
 
 /* =================================== */
-/* 响应式设计 (手机端) */
+/* 响应式 (手机端) */
 /* =================================== */
-@media (max-width: 768px) {
-  #main {
-    flex-direction: column; /* 堆叠布局 */
-    padding: 20px;
+@media (max-width: 960px) {
+  body {
+    margin: 20px auto;
   }
-  
-  #left {
+  #main, #left, #right {
+    display: block; /* 在手机上变回 "堆叠" 布局 */
+    width: 100%;
     padding-right: 0;
-    width: 100%;
   }
-
   #right {
-    /* 把头像移到最上面 */
-    order: -1; 
-    width: 100%;
+    text-align: center;
+    order: -1; /* 把头像移到最上面 */
     margin-bottom: 30px;
   }
-  
   #right img {
-    width: 150px; /* 手机上头像小一点 */
-    height: 150px;
+    width: 200px; /* 手机上头像小一点 */
+    height: 200px;
   }
-  
   h1 {
-    font-size: 36px;
+    font-size: 40px;
     text-align: center;
   }
-  
   .intro, .skills-bar, .contact-links {
     text-align: center; /* 手机上居中 */
   }

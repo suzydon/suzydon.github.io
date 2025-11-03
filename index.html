@@ -1,140 +1,411 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suzy Tang - Data Science & Quant Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Suzy Tang</title>
+    <meta name="author" content="Suzy Tang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
 
-<body>
-  <div id="container">
-    <div id="main"> <div id="left">
-        
-        <h1>Suzy Tang</h1>
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Suzy Tang
+                </p>
+                <p>
+                  I'm a Data Scientist with 9 years of experience spanning AI product development at <a href="https://www.huawei.com/">Huawei</a> and quantitative finance at <a href="https://www.hsbc.com/">HSBC</a>. Currently, I'm pursuing a Master of Data Science at <a href="https://www.uts.edu.au/">UTS</a> while working as a Data Specialist at <a href="https://www.cancercouncil.com.au/">Cancer Council NSW</a>.
+                </p>
+                <p>
+                  My work focuses on building machine learning systems for real-world impact—from developing NLP engines that powered Huawei's product lines to designing pricing algorithms that generated millions in revenue for FX trading operations. I'm passionate about applying advanced analytics and AI to solve complex problems in finance, healthcare, and technology.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:suzytang5544@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="data/SuzyTang-CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/suzy-tang/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/suzydon">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/SuzyTang.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/SuzyTang.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
 
-        <p class="intro">
-          I'm a Data Scientist with 9 years of experience in AI products (Huawei) 
-          and quantitative finance (HSBC), currently completing my Master of Data 
-          Science at UTS.
-        </p>
-        <p class="intro">
-          I specialize in building ML models and quantitative solutions for finance 
-          and tech. This portfolio showcases projects demonstrating my technical 
-          skills in Python, machine learning, and data analytics.
-        </p>
+          <!-- Research/Projects Section -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Featured Projects</h2>
+                <p>
+                  My work spans quantitative finance, machine learning, and data analytics. I'm particularly interested in applying statistical modeling and deep learning to financial markets, building production-grade ML systems, and creating data-driven solutions for business impact.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
 
-        <div class="skills-bar">
-          Skills: <code>Python</code> &bull; <code>Machine Learning</code> &bull; <code>SQL</code> &bull; <code>Time Series</code> &bull; <code>NLP</code> &bull; <code>Quant Finance</code>
-        </div>
-        
-        <p class="contact-links">
-          <a href="https://github.com/suzydon">GitHub</a> /
-          <a href="https://www.linkedin.com/in/suzytang/">LinkedIn</a> /
-          <a href="mailto:suzytang5544@gmail.com">Email</a> /
-          <a href="https://drive.google.com/file/d/1U02iaNLZKgGZZwefNmaddPn3FAfKhy-3/view?usp=sharing">CV / Resume</a>
-        </p>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-        <section id="experience">
-          <h2>Work Experience</h2>
+            <!-- Project 1: Algorithmic Trading -->
+            <tr onmouseout="algotrading_stop()" onmouseover="algotrading_start()" bgcolor="#ffffd0">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='algotrading_image'>
+                    <img src='images/algotrading_after.jpg' width="160">
+                  </div>
+                  <img src='images/algotrading_before.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function algotrading_start() {
+                    document.getElementById('algotrading_image').style.opacity = "1";
+                  }
+                  function algotrading_stop() {
+                    document.getElementById('algotrading_image').style.opacity = "0";
+                  }
+                  algotrading_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <a href="https://github.com/suzydon/algorithmic-trading-strategy">
+                  <span class="papertitle">Algorithmic Trading Strategy: Momentum-Based Backtesting Engine</span>
+                </a>
+                <br>
+                <strong>Suzy Tang</strong>
+                <br>
+                <em>Personal Project</em>, 2024
+                <br>
+                <a href="https://github.com/suzydon/algorithmic-trading-strategy">code</a>
+                <p></p>
+                <p>
+                  Built a prototype algorithmic trading engine that identifies and backtests momentum-based strategies on U.S. equity market data, demonstrating quantitative finance expertise and systematic trading approach.
+                </p>
+              </td>
+            </tr>
 
-          <div class="job">
-            <h3>Data Specialist @ Cancer Council NSW</h3>
-            <p class="job-date">Dec 2024 - Present</p>
-            <ul>
-              <li>Data reconciliation, Power BI dashboards, Azure migration</li>
-            </ul>
-          </div>
+            <!-- Project 2: Sales Analytics Dashboard -->
+            <tr onmouseout="sales_stop()" onmouseover="sales_start()" bgcolor="#ffffd0">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='sales_image'>
+                    <img src='images/sales_after.jpg' width="160">
+                  </div>
+                  <img src='images/sales_before.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function sales_start() {
+                    document.getElementById('sales_image').style.opacity = "1";
+                  }
+                  function sales_stop() {
+                    document.getElementById('sales_image').style.opacity = "0";
+                  }
+                  sales_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <a href="https://suzydon.github.io/sales-analytics-dashboard/comprehensive_sales_dashboard.html">
+                  <span class="papertitle">Comprehensive Sales Analytics Dashboard</span>
+                </a>
+                <br>
+                <strong>Suzy Tang</strong>
+                <br>
+                <em>Personal Project</em>, 2024
+                <br>
+                <a href="https://suzydon.github.io/sales-analytics-dashboard/comprehensive_sales_dashboard.html">live demo</a>
+                /
+                <a href="https://github.com/suzydon/sales-analytics-dashboard">code</a>
+                <p></p>
+                <p>
+                  Interactive business intelligence dashboard with 12+ visualizations analyzing $45.6M in revenue across multiple dimensions. Features executive summary, trend analysis, and customer insights built with Python.
+                </p>
+              </td>
+            </tr>
 
-          <div class="job">
-            <h3>Strategy Analyst @ HSBC</h3>
-            <p class="job-date">Jun 2021 - Jun 2024</p>
-            <ul>
-              <li>FX trading analytics, pricing models, SWIFT automation</li>
-              <li>🏆 HSBC APAC FinTech Innovation Award 2023</li>
-            </ul>
-          </div>
-          
-          <div class="job">
-            <h3>AI Product Manager @ Huawei</h3>
-            <p class="job-date">Jan 2018 - May 2021</p>
-            <ul>
-              <li>NLP engine, pricing optimization, A/B testing</li>
-            </ul>
-          </div>
+            <!-- Project 3: Healthcare Analytics -->
+            <tr onmouseout="healthcare_stop()" onmouseover="healthcare_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='healthcare_image'>
+                    <img src='images/healthcare_after.jpg' width="160">
+                  </div>
+                  <img src='images/healthcare_before.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function healthcare_start() {
+                    document.getElementById('healthcare_image').style.opacity = "1";
+                  }
+                  function healthcare_stop() {
+                    document.getElementById('healthcare_image').style.opacity = "0";
+                  }
+                  healthcare_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <a href="https://github.com/suzydon/healthcare-analytics">
+                  <span class="papertitle">Healthcare Analytics Dashboard</span>
+                </a>
+                <br>
+                <strong>Suzy Tang</strong>
+                <br>
+                <em>Personal Project</em>, 2024
+                <br>
+                <a href="https://github.com/suzydon/healthcare-analytics">code</a>
+                <p></p>
+                <p>
+                  Interactive healthcare analytics system analyzing patient volume, treatment costs, satisfaction metrics, and clinical outcomes across multiple departments. Built with Python data science stack.
+                </p>
+              </td>
+            </tr>
 
-          <div class="job">
-            <h3>Data Analyst @ Nestlé</h3>
-            <p class="job-date">Sep 2016 - Jan 2018</p>
-            <ul>
-              <li>ETL pipelines, sales analytics, dashboards</li>
-            </ul>
-          </div>
-        </section> <section id="projects">
-          <h2>Featured Projects</h2>
+            <!-- Project 4: Flight Passenger Satisfaction -->
+            <tr onmouseout="flight_stop()" onmouseover="flight_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='flight_image'>
+                    <img src='images/flight_after.jpg' width="160">
+                  </div>
+                  <img src='images/flight_before.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function flight_start() {
+                    document.getElementById('flight_image').style.opacity = "1";
+                  }
+                  function flight_stop() {
+                    document.getElementById('flight_image').style.opacity = "0";
+                  }
+                  flight_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <a href="https://github.com/suzydon/flight-passenger-satisfaction">
+                  <span class="papertitle">Customer Experience Analytics - Aviation Industry</span>
+                </a>
+                <br>
+                <strong>Suzy Tang</strong>
+                <br>
+                <em>Data Science Project</em>, 2024
+                <br>
+                <a href="https://github.com/suzydon/flight-passenger-satisfaction">code</a>
+                <p></p>
+                <p>
+                  End-to-end machine learning pipeline for analyzing and predicting passenger satisfaction in aviation. Includes comprehensive EDA, feature engineering, and predictive modeling with 85%+ accuracy.
+                </p>
+              </td>
+            </tr>
 
-          <h3>Quantitative Finance & Trading</h3>
-          
-          <div class="project">
-            <h4>FX Trading Strategy Backtesting System</h4>
-            <p>
-              Built a Python-based backtesting framework for FX strategies (MA crossover, mean reversion) using historical data. Calculates risk metrics (Sharpe ratio, max drawdown) and visualizes returns.
-              <br><b>Tech:</b> Python (NumPy, Pandas), Time Series, Statistical Modeling
-              <br><a href="https://github.com/suzydon/algo-trading-clean">[View on GitHub]</a>
-            </p>
-          </div>
-          
-          <div class="project">
-            <h4>Kaggle - Jane Street Market Prediction</h4>
-            <p>
-              Kaggle competition focused on predicting financial market movements. Explored feature engineering and ensemble methods (XGBoost, LightGBM) to handle high-volume, noisy data.
-              <br><b>Tech:</b> Python, Scikit-learn, XGBoost, Feature Engineering
-              <br><a href="[Your Kaggle/GitHub Link]">[View Project]</a>
-            </p>
-          </div>
+            <!-- Project 5: MDM Strategy -->
+            <tr onmouseout="mdm_stop()" onmouseover="mdm_start()">
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='mdm_image'>
+                    <img src='images/mdm_after.jpg' width="160">
+                  </div>
+                  <img src='images/mdm_before.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function mdm_start() {
+                    document.getElementById('mdm_image').style.opacity = "1";
+                  }
+                  function mdm_stop() {
+                    document.getElementById('mdm_image').style.opacity = "0";
+                  }
+                  mdm_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <a href="https://github.com/suzydon/mdm-snowflake-project">
+                  <span class="papertitle">Master Data Management Strategy & Snowflake Optimization</span>
+                </a>
+                <br>
+                <strong>Suzy Tang</strong>
+                <br>
+                <em>Advanced Database Systems, UTS</em>, 2024
+                <br>
+                <a href="https://github.com/suzydon/mdm-snowflake-project">code</a>
+                <p></p>
+                <p>
+                  Two-part project: (1) Strategic MDM solution design for Vodafone addressing data silo challenges, and (2) Technical analysis of Snowflake's caching mechanisms for performance optimization and cost reduction.
+                </p>
+              </td>
+            </tr>
 
-          <h3>Machine Learning & Data Science</h3>
+          </tbody></table>
 
-          <div class="project">
-            <h4>Sales Analytics & Forecasting Dashboard</h4>
-            <p>
-              End-to-end sales system with revenue forecasting (ARIMA/Prophet), customer segmentation (K-means), and an interactive dashboard built with Streamlit.
-              <br><b>Tech:</b> Python, Pandas, Scikit-learn, Time Series, Streamlit
-              <br><a href="https://github.com/suzydon/sales-analytics-dashboard">[View on GitHub]</a>
-              </p>
-          </div>
-          
-          <div class="project">
-            <h4>Healthcare Risk Prediction</h4>
-            <p>
-              Developed a classification model to predict [Specific Risk] from an imbalanced healthcare dataset. Focused on preprocessing and class-imbalance techniques (SMOTE).
-              <br><b>Tech:</b> Python, Classification Models, Data Preprocessing
-              <br><a href="https://github.com/suzydon/healthcare">[View on GitHub]</a>
-            </p>
-          </div>
+          <!-- Work Experience Section -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Work Experience</h2>
+              </td>
+            </tr>
+          </tbody></table>
 
-          <h3>Data Engineering & Analytics</h3>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="images/cancercouncil.jpg" alt="cancer council" width="160">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">Data Specialist</span>
+                <br>
+                <a href="https://www.cancercouncil.com.au/">Cancer Council NSW</a>, Sydney
+                <br>
+                <em>December 2024 - Present</em>
+                <br>
+                <p>
+                  • Reduced data mismatch rate by 40% through robust reconciliation workflows<br>
+                  • Improved reporting accuracy by 25% via data model standardization and Power BI dashboards<br>
+                  • Led migration of 5+ legacy systems to Azure with zero critical data loss<br>
+                  • Accelerated ETL processes by 30% through Python and Boomi optimization
+                </p>
+              </td>
+            </tr>
 
-          <div class="project">
-            <h4>MDM Strategy Analysis (Vodafone Case)</h4>
-            <p>
-              Strategic case study analyzing MDM implementation and Snowflake optimization for enterprise data architecture. Focus on data governance, cloud optimization, and cost analysis.
-              <br><b>Deliverables:</b> Technical presentation with architecture diagrams
-              <br><a href="https://github.com/suzydon/MDM-Strategy-Vodafone-Case-Study">[View Slides/Report on GitHub]</a>
-            </p>
-          </div>
-          
-          <div class="project">
-            <h4>Student Management System (Full-Stack)</h4>
-            <p>
-              Interactive university data management system with CLI and GUI interfaces. Demonstrates database design (SQL) and software development principles (Python).
-              <a href="https://github.com/suzydon/FSD_code_ninjas">[View on GitHub]</a>
-            </p>
-          </div>
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="images/hsbc.jpg" alt="hsbc" width="160">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">Strategy Analyst</span>
+                <br>
+                <a href="https://www.hsbc.com/">HSBC</a>, Hong Kong
+                <br>
+                <em>June 2021 - June 2024</em>
+                <br>
+                <p>
+                  • Improved FX execution accuracy by 15% through multi-variable forecasting models<br>
+                  • Generated $2.5M in additional revenue via pricing algorithms analyzing 2M+ daily transactions<br>
+                  • Increased client retention by 22% through personalized pricing strategies<br>
+                  • Reduced pricing errors by 45% via SWIFT-based reconciliation automation<br>
+                  🏆 <strong>HSBC APAC FinTech Innovation Award 2023</strong>
+                </p>
+              </td>
+            </tr>
 
-        </section> </div> <div id="right">
-        <img src="images/profile-pic.jpg" alt="Suzy Tang Profile Picture">
-      </div>
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="images/huawei.jpg" alt="huawei" width="160">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">AI Product Manager</span>
+                <br>
+                <a href="https://www.huawei.com/">Huawei</a>, China
+                <br>
+                <em>January 2018 - May 2021</em>
+                <br>
+                <p>
+                  • Built real-time NLP engine (>95% accuracy, <0.8s latency) using TensorFlow and Kubernetes<br>
+                  • Increased user conversion by 12% and saved $2M annually through pricing optimization<br>
+                  • Competed with iFlyTek, securing internal adoption across multilingual platforms<br>
+                  • Enhanced pricing model effectiveness by 40% through A/B testing and behavioral analysis
+                </p>
+              </td>
+            </tr>
 
-    </div> </div> </body>
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="images/nestle.jpg" alt="nestle" width="160">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">Data Analyst</span>
+                <br>
+                <a href="https://www.nestle.com/">Nestlé</a>, China
+                <br>
+                <em>September 2016 - January 2018</em>
+                <br>
+                <p>
+                  • Performed end-to-end ETL on sales and logistics data for executive reporting<br>
+                  • Reduced manual reporting time by 20% through SQL automation<br>
+                  • Created operational dashboards improving service response time<br>
+                  • Delivered data quality improvements supporting customer segmentation
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <!-- Education Section -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Education</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="images/uts.jpg" alt="uts" width="160">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">Master of Data Science</span>
+                <br>
+                University of Technology Sydney (UTS)
+                <br>
+                <em>2024 - 2026</em>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="images/ouc.jpg" alt="ouc" width="160">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">Bachelor of Commerce</span>
+                <br>
+                Ocean University of China
+                <br>
+                <em>2011 - 2015</em>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <!-- Skills Section -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Technical Skills</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:8px;width:100%;vertical-align:middle">
+                <p>
+                  <strong>Languages:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-learn, TensorFlow), SQL, R, PySpark, VBA
+                  <br><br>
+                  <strong>Data & ML:</strong> ETL Pipelines, Data Cleansing, Data Governance, Regression, Classification, Clustering, A/B Testing, Time Series Analysis, Predictive Modeling, NLP
+                  <br><br>
+                  <strong>Tools & Platforms:</strong> Tableau, Power BI, Excel, Jupyter, Git, Azure, AWS, Hadoop, Hive, Spark, Kubernetes, Airflow, Bloomberg Terminal
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- Footer -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Website template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

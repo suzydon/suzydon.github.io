@@ -9,7 +9,7 @@ Visit my portfolio: suzydon.github.io
 About Me
 Senior Data Scientist with 9+ years of experience in:
 
-- AI Product Management at Huawei
+- AI Product DS at Huawei
 - Quantitative Finance at HSBC
 - Healthcare Analytics at Cancer Council NSW
 - Currently pursuing Master of Data Science at UTS Sydney
@@ -36,10 +36,5 @@ Domains: Financial Markets, Healthcare, Business Intelligence
 
 
  Email: suzytang5544@gmail.com
- Phone: +61 478 543 325
  LinkedIn: linkedin.com/in/suzytang
- GitHub: github.com/suzydon
- Location: Sydney, Australia
 
- Seeking Opportunities
-Currently seeking challenging Data Science roles in fast-growing Australian SMEs where strategic thinking meets hands-on execution.

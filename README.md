@@ -1,18 +1,18 @@
 
-Suzy Tang - Data Science Portfolio
+Suzy Tang - FX Quant & DS 
 
-Welcome to my professional data science portfolio! This repository contains the source code for my personal website showcasing my expertise in machine learning, quantitative finance, and business intelligence.
+Welcome to my professional portfolio! 
+This repository contains the source code for my personal website showcasing my expertise in machine learning, quantitative finance, and business intelligence.
 
 
 Visit my portfolio: suzydon.github.io
 
 About Me
-Senior Data Scientist with 9+ years of experience in:
+Senior QA in FX with 9+ years of experience in:
 
-- AI Product DS at Huawei
-- Quantitative Finance at HSBC
-- Healthcare Analytics at Cancer Council NSW
-- Currently pursuing Master of Data Science at UTS Sydney
+- AI DS at Huawei
+- Quant Finance at HSBC
+- Currently pursuing MSc at UTS Sydney
 
  Featured Projects
 
